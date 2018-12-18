@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "cd2569f3-d53c-4ae4-b006-a6658a80d41b",
+		"name": "FWP API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "transact-app",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "c75d185a157a4c6ab1aa03938d340d19"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"terminalId\": \"V12305\",\n\t\t\"taxiId\": \"1234\",\n\t\t\"merchantId\": \"67854554\",\n\t\t\"meterSerial\": \"85210333\",\n\t\t\"stan\":\"10\",\n\t\t\"timestamp\": 1532053434,\n\t\t\"networkName\": \"Cabcharge\",\n\t\t\"clientId\": \"cc\",\n\t\t\"driverId\": \"123\",\n\t\t\"driverABN\": \"123\",\n\t\t\"shiftStartRRN\": 120,\n\t\t\"rrn\": 130,\n\t\t\"fareDetails\": {\n\t\t\t\t\"creditcard\": {\n\t\t\t\t\t\"currencyCode\": \"036\",\n\t\t\t\t\t\"serviceFee\": 36,\n\t\t\t\t\t\"gstOnServiceFee\": 0,\n\t\t\t\t\t\"totalAmount\": 1036,\n\t\t\t\t\t\"overLimit\": 0,\n\t\t\t\t\t\"fare\": 1000,\n\t\t\t\t\t\"tip\": 0,\n\t\t\t\t\t\"adjustedFare\": 1036,\n\t\t\t\t\t\"roundingFlag\": 1,\n\t\t\t\t\t\"meterExtras\": 124\n\t\t\t\t},\n\t\t\t\t\"cabcharge\": {\n\t\t\t\t\t\"currencyCode\": \"036\",\n\t\t\t\t\t\"serviceFee\": 38,\n\t\t\t\t\t\"gstOnServiceFee\": 0,\n\t\t\t\t\t\"totalAmount\": 1038,\n\t\t\t\t\t\"overLimit\": 0,\n\t\t\t\t\t\"fare\": 1000,\n\t\t\t\t\t\"tip\": 0,\n\t\t\t\t\t\"adjustedFare\": 1036,\n\t\t\t\t\t\"roundingFlag\": 1,\n\t\t\t\t\t\"meterExtras\": 432\n\t\t\t\t}\n\t\t},\n\t\t\"extrasDetails\": [\n\t\t\t{\n\t\t\t\t\"description\": \"booking\",\n                \"amount\": 150\n\t\t\t}\n\t\t],\n\t\"tripDetails\": {\n            \"gpsStart\": {\n                \"latitude\": -16.884301,\n                \"longitude\": 145.69427,\n                \"text\": \"KAMERUNGA\"\n            },\n            \"gpsEnd\": {\n                \"latitude\": -16.911354,\n                \"longitude\": 145.740866,\n                \"text\": \"MANOORA\"\n            },\n            \"kilometers\": 7,\n            \"startTime\": 1519635908,\n            \"endTime\": 1519636456,\n            \"waypoints\": [\n                {\n                    \"latitude\": -16.884301,\n                    \"longitude\": 145.69427\n                },\n                {\n                    \"latitude\": -16.884301,\n                    \"longitude\": 145.69427\n                },\n                {\n                    \"latitude\": -16.884694,\n                    \"longitude\": 145.694011\n                },\n                {\n                    \"latitude\": -16.882652,\n                    \"longitude\": 145.692879\n                },\n                {\n                    \"latitude\": -16.88241,\n                    \"longitude\": 145.693187\n                },\n                {\n                    \"latitude\": -16.887471,\n                    \"longitude\": 145.699047\n                },\n                {\n                    \"latitude\": -16.889995,\n                    \"longitude\": 145.700595\n                },\n                {\n                    \"latitude\": -16.892092,\n                    \"longitude\": 145.70273\n                },\n                {\n                    \"latitude\": -16.893953,\n                    \"longitude\": 145.706204\n                },\n                {\n                    \"latitude\": -16.896469,\n                    \"longitude\": 145.709255\n                },\n                {\n                    \"latitude\": -16.903463,\n                    \"longitude\": 145.708987\n                },\n                {\n                    \"latitude\": -16.905877,\n                    \"longitude\": 145.710748\n                },\n                {\n                    \"latitude\": -16.909136,\n                    \"longitude\": 145.713162\n                },\n                {\n                    \"latitude\": -16.911455,\n                    \"longitude\": 145.716252\n                },\n                {\n                    \"latitude\": -16.913171,\n                    \"longitude\": 145.719503\n                },\n                {\n                    \"latitude\": -16.914425,\n                    \"longitude\": 145.727506\n                },\n                {\n                    \"latitude\": -16.915607,\n                    \"longitude\": 145.730774\n                },\n                {\n                    \"latitude\": -16.916504,\n                    \"longitude\": 145.733481\n                },\n                {\n                    \"latitude\": -16.915003,\n                    \"longitude\": 145.734471\n                },\n                {\n                    \"latitude\": -16.913313,\n                    \"longitude\": 145.735167\n                },\n                {\n                    \"latitude\": -16.913757,\n                    \"longitude\": 145.739655\n                },\n                {\n                    \"latitude\": -16.913443,\n                    \"longitude\": 145.740658\n                },\n                {\n                    \"latitude\": -16.912445,\n                    \"longitude\": 145.740783\n                },\n                {\n                    \"latitude\": -16.9123,\n                    \"longitude\": 145.740785\n                },\n                {\n                    \"latitude\": -16.911354,\n                    \"longitude\": 145.740866\n                }\n            ]\n        }\n\t}"
+				},
+				"url": {
+					"raw": "https://cabcharge-dev.azure-api.net/mps/13cabs-payments/transact-app",
+					"protocol": "https",
+					"host": [
+						"cabcharge-dev",
+						"azure-api",
+						"net"
+					],
+					"path": [
+						"mps",
+						"13cabs-payments",
+						"transact-app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transact-app Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "api-shared-key",
+						"value": "9Vt3DAIXku+DwFvBGPiIyzd5jm+x1nzdTmuH2lhV5zSPvVicli7YjHll6e1UJ/Zq",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"terminalId\": \"V12305\",\n\t\t\"taxiId\": \"TT567\",\n\t\t\"merchantId\": \"67854554\",\n\t\t\"meterSerial\": \"85210333\",\n\t\t\"stan\":\"10\",\n\t\t\"timestamp\": 1532053452,\n\t\t\"networkName\": \"Cabcharge\",\n\t\t\"clientId\": \"cc\",\n\t\t\"driverId\": \"123\",\n\t\t\"driverABN\": \"123\",\n\t\t\"shiftStartRRN\": 120,\n\t\t\"rrn\": 209,\n\t\t\"fareDetails\": {\n\t\t\t\t\"creditcard\": {\n\t\t\t\t\t\"currencyCode\": \"036\",\n\t\t\t\t\t\"serviceFee\": 50,\n\t\t\t\t\t\"gstOnServiceFee\": 0,\n\t\t\t\t\t\"totalAmount\": 1050,\n\t\t\t\t\t\"overLimit\": 0,\n\t\t\t\t\t\"fare\": 1000,\n\t\t\t\t\t\"tip\": 0,\n\t\t\t\t\t\"adjustedFare\": 1000,\n\t\t\t\t\t\"roundingFlag\": 1,\n\t\t\t\t\t\"meterExtras\": 0\n\t\t\t\t},\n\t\t\t\t\"cabcharge\": {\n\t\t\t\t\t\"currencyCode\": \"036\",\n\t\t\t\t\t\"serviceFee\": 38,\n\t\t\t\t\t\"gstOnServiceFee\": 0,\n\t\t\t\t\t\"totalAmount\": 1038,\n\t\t\t\t\t\"overLimit\": 0,\n\t\t\t\t\t\"fare\": 1000,\n\t\t\t\t\t\"tip\": 0,\n\t\t\t\t\t\"adjustedFare\": 1036,\n\t\t\t\t\t\"roundingFlag\": 1,\n\t\t\t\t\t\"meterExtras\": 432\n\t\t\t\t}\n\t\t},\n\t\t\"extrasDetails\": [\n\t\t\t{\n\t\t\t\t\"description\": \"booking\",\n                \"amount\": 150\n\t\t\t}\n\t\t],\n\t\"tripDetails\": {\n            \"gpsStart\": {\n                \"latitude\": -16.884301,\n                \"longitude\": 145.69427,\n                \"text\": \"KAMERUNGA\"\n            },\n            \"gpsEnd\": {\n                \"latitude\": -16.911354,\n                \"longitude\": 145.740866,\n                \"text\": \"MANOORA\"\n            },\n            \"kilometers\": 7,\n            \"startTime\": 1519635908,\n            \"endTime\": 1519636456,\n            \"waypoints\": [\n                {\n                    \"latitude\": -16.884301,\n                    \"longitude\": 145.69427\n                },\n                {\n                    \"latitude\": -16.884301,\n                    \"longitude\": 145.69427\n                },\n                {\n                    \"latitude\": -16.884694,\n                    \"longitude\": 145.694011\n                },\n                {\n                    \"latitude\": -16.882652,\n                    \"longitude\": 145.692879\n                },\n                {\n                    \"latitude\": -16.88241,\n                    \"longitude\": 145.693187\n                },\n                {\n                    \"latitude\": -16.887471,\n                    \"longitude\": 145.699047\n                },\n                {\n                    \"latitude\": -16.889995,\n                    \"longitude\": 145.700595\n                },\n                {\n                    \"latitude\": -16.892092,\n                    \"longitude\": 145.70273\n                },\n                {\n                    \"latitude\": -16.893953,\n                    \"longitude\": 145.706204\n                },\n                {\n                    \"latitude\": -16.896469,\n                    \"longitude\": 145.709255\n                },\n                {\n                    \"latitude\": -16.903463,\n                    \"longitude\": 145.708987\n                },\n                {\n                    \"latitude\": -16.905877,\n                    \"longitude\": 145.710748\n                },\n                {\n                    \"latitude\": -16.909136,\n                    \"longitude\": 145.713162\n                },\n                {\n                    \"latitude\": -16.911455,\n                    \"longitude\": 145.716252\n                },\n                {\n                    \"latitude\": -16.913171,\n                    \"longitude\": 145.719503\n                },\n                {\n                    \"latitude\": -16.914425,\n                    \"longitude\": 145.727506\n                },\n                {\n                    \"latitude\": -16.915607,\n                    \"longitude\": 145.730774\n                },\n                {\n                    \"latitude\": -16.916504,\n                    \"longitude\": 145.733481\n                },\n                {\n                    \"latitude\": -16.915003,\n                    \"longitude\": 145.734471\n                },\n                {\n                    \"latitude\": -16.913313,\n                    \"longitude\": 145.735167\n                },\n                {\n                    \"latitude\": -16.913757,\n                    \"longitude\": 145.739655\n                },\n                {\n                    \"latitude\": -16.913443,\n                    \"longitude\": 145.740658\n                },\n                {\n                    \"latitude\": -16.912445,\n                    \"longitude\": 145.740783\n                },\n                {\n                    \"latitude\": -16.9123,\n                    \"longitude\": 145.740785\n                },\n                {\n                    \"latitude\": -16.911354,\n                    \"longitude\": 145.740866\n                }\n            ]\n        }\n\t}"
+				},
+				"url": {
+					"raw": "https://13cabs-payments-service-mps-1087-test-app.azurewebsites.net/transact-app",
+					"protocol": "https",
+					"host": [
+						"13cabs-payments-service-mps-1087-test-app",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"transact-app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "host-receipt",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "partnerId",
+						"value": "\"0\""
+					},
+					{
+						"key": "partnerAuth",
+						"value": "\"password\""
+					},
+					{
+						"key": "appId",
+						"value": "\"0\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"terminalId\": \"V00418\",\n    \"taxiId\": \"123444\",\n    \"cardType\": \"tokenCard\",\n    \"tripDateTime\": \"2018-06-29T00:44:12.988Z\",\n    \"details\": {\n        \"pickUp\": \"HOSPITAL\",\n        \"dest\": \"HOME\",\n        \"route\": [\n            {\n                \"lng\": 151.214945,\n                \"lat\": -33.877905\n            },\n            {\n                \"lng\": 151.214945,\n                \"lat\": -33.877905\n            }\n        ],\n        \"fare\": 1000,\n        \"gstOnFare\": 0,\n        \"other\": 0,\n        \"extras\": {\n            \"itemised\": {\n                \"bookingFee\": 120,\n                \"manualExtras\": 450\n            }\n        },\n        \"serviceFee\": 36,\n        \"gstOnServiceFee\": 0,\n        \"totalFare\": 1036,\n        \"cardNumber\": \"999998560248627878\",\n        \"paymentCode\": \"123456789012\",\n        \"transaction\": \"Approved 00\",\n        \"taxiNetwork\": \"Cabcharge\",\n        \"merchantId\": \"77777777\",\n        \"driverId\": \"1234\",\n        \"driverAbn\": \"099000000000\",\n        \"clientId\": \"5678\",\n        \"retrievalReferenceNumber\": 57047\n    }\n}"
+				},
+				"url": {
+					"raw": "http://192.168.0.196:3000/api/1.0/host/receipt",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"196"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"1.0",
+						"host",
+						"receipt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mps-receipt-get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://192.168.0.196:3000/api/1.0/13cabs/${options.partCustId}/receipts/transaction/${options.transactionId}",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"196"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"1.0",
+						"13cabs",
+						"${options.partCustId}",
+						"receipts",
+						"transaction",
+						"${options.transactionId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-card-list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "partnerId",
+						"value": "0",
+						"type": "text"
+					},
+					{
+						"key": "appId",
+						"value": "0",
+						"type": "text"
+					},
+					{
+						"key": "partnerAuth",
+						"value": "password",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://192.168.0.196:3000/api/1.0/13cabs/1541551732190/cards",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"196"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"1.0",
+						"13cabs",
+						"1541551732190",
+						"cards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign booking",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://cc-prod-mtdata-dispatch-services.azurewebsites.net/api/odiextesions/AssignBookingToDriverWithPrescribedBooking?dispatchSystemId=6&bookingId=166616172&driverNumber=6384",
+					"protocol": "https",
+					"host": [
+						"cc-prod-mtdata-dispatch-services",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"odiextesions",
+						"AssignBookingToDriverWithPrescribedBooking"
+					],
+					"query": [
+						{
+							"key": "dispatchSystemId",
+							"value": "6"
+						},
+						{
+							"key": "bookingId",
+							"value": "166616172"
+						},
+						{
+							"key": "driverNumber",
+							"value": "6384"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "host-submission",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
